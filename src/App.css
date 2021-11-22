@@ -1,0 +1,99 @@
+#etell {
+  font-family: "Fira Code", monospace;
+  font-family: "Lato", sans-serif;
+  font-family: "Zen Kurenaido", sans-serif;
+  font-size: 50px;
+}
+.signin {
+  padding: 5px 20px;
+  border: none;
+}
+.cards {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.card-boxs {
+  border: 1px solid black;
+  width: 20%;
+  padding: 10px;
+  margin: 30px;
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+.card-img-tops {
+  padding-left: 23px;
+  padding-bottom: 20px;
+  width: 200px;
+}
+
+.card {
+  -webkit-box-shadow: 0 35px 20px #777;
+  -moz-box-shadow: 0 35px 20px #777;
+  box-shadow: 0 35px 20px #777;
+  border: none;
+}
+#imganimation {
+  width: 130px;
+  position: relative;
+  border: 2px solid white;
+
+  animation-name: images;
+  animation-duration: 4s;
+  animation-delay: 0.1s;
+}
+
+@keyframes images {
+  0% {
+    border: 2px solid rgb(71, 189, 195);
+  }
+  50% {
+    border: 2px solid rgb(71, 189, 195);
+    border-radius: 80px;
+  }
+  100% {
+    border-radius: 80px;
+  }
+}
+
+#divanimation {
+  width: 100px;
+  height: 100px;
+  left: 424px;
+  top: 27px;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: 0.1s;
+}
+
+@keyframes example {
+  0% {
+    left: 0px;
+    top: 27px;
+  }
+
+  30% {
+    left: 424px;
+    top: 27px;
+    border-radius: 50px;
+  }
+  80% {
+    left: 424px;
+    top: 27px;
+    border-radius: 60px;
+  }
+
+  100% {
+  }
+}
+
+.menu-active {
+  background: rgb(71, 189, 195);
+}
